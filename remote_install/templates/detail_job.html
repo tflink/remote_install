@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1> Job {{ job.id }} - {{ job.name }} </h1>
+{% endblock %}
+
+{% block body %}
+
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <td>{{ job.id }}</td>
+    </tr>
+    <tr>
+        <th>user</td>
+        <td>{{ job.user.username }}</td>
+    </tr>
+    <tr>
+        <th>name</td>
+        <td>{{ job.name }}</td>
+    </tr>
+    <tr>
+        <th>status</td>
+        <td>{{ job.status }}</td>
+    </tr>
+    <tr>
+        <th>machine</td>
+        <td><a href="{{ url_for('component.machine_detail', machine_id=job.machine.id) }}">
+                {{ job.machine.name }} </a></td>
+    </tr>
+    {% if job.status in ['RUNNING', 'INSTALLING'] %}
+    <tr>
+        <th>Access Info</td>
+        <td>
+            <table>
+                <tr>
+                    <td>URL</td>
+                    <td><a href="{{ slot.url }}" target="_blank"> Remote Access </a></td>
+                </tr>
+                <tr>
+                    <td>VNC User (Faster)</td>
+                    <td>{{ slot.username }}</td>
+                </tr>
+                <tr>
+                    <td>QEMU Console User</td>
+                    <td>{{ slot.username }}-detail</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>{{ slot.password }}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {% endif %}
+
+
+    {% if job.status != 'INITIALIZING' %}
+    <tr>
+        <th> Log Files </td>
+        <td>
+            <table>
+                {% for log in logs %}
+                    <tr>
+                        <td> <a href="{{ log_prefix}}/{{job.machine.name}}/{{ log }}" target="_blank"> {{ log }} </a> </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </td>
+    </tr>
+    {% endif %}
+</table>
+
+{% if job.status != 'COMPLETE' %}
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <form method='post' action='./{{ job.id }}'>
+                <input type='hidden' name='request' value='COMPLETE'/>
+                <input type='submit' value='Complete job'/>
+            </form>
+        </td>
+        {% if current_user.admin and job.status == 'INITIALIZING' %}
+        <td>
+            <form method='get' action='./{{ job.id }}/init_done'>
+                <input type='submit' value='Force change to INSTALLING'/>
+            </form>
+        </td>
+        {% endif %}
+        {% if current_user.admin and job.status == 'INSTALLING' %}
+        <td>
+            <form method='get' action='./{{ job.id }}/install_done'>
+                <input type='submit' value='Force INSTALLING complete'/>
+            </form>
+        </td>
+        {% endif %}
+        {% if (current_user.admin or job.user == current_user) and job.machine.status == 'STOPPED' %}
+        <td>
+            <form method='post' action='./{{ job.id }}'>
+                <input type='hidden' name='request' value='RESTART'/>
+                <input type='submit' value='Start VM'/>
+            </form>
+        </td>
+        {% endif %}
+
+    </tr>
+
+</table>
+{% endif %}
+
+{% endblock%}

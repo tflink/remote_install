@@ -1,0 +1,139 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ meta_description }}">
+  <meta name="author" content="{{ meta_author }}">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/style.css') }} ">
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/960.css') }} ">
+  <!-- end CSS-->
+</head>
+
+{% macro render_pagination(pagination, endpoint) %}
+<div class=pagination>
+    {% if pagination.has_prev %}
+        <a href="{{ url_for(endpoint, page=(pagination.page - 1)) }}">&laquo; Prev</a>
+    {% endif %}
+    {% for page in pagination.iter_pages() %}
+        {% if page %}
+            {% if page != pagination.page %}
+                <a href="{{ url_for(endpoint, page=page) }}"> {{ page }}</a>
+            {% else %}
+                <strong> {{ page }} </strong>
+            {% endif %}
+        {% else %}
+            <span class=ellipsis>...</span>
+        {% endif %}
+    {% endfor %}
+
+    {% if pagination.has_next %}
+        <a href="{{ url_for(endpoint, page=(pagination.page + 1)) }}"> Next &raquo;</a>
+    {% endif %}
+</div>
+{% endmacro %}
+
+
+<body>
+
+    <div id="container" class="container_12">
+        <div id="banner" class="grid_12">
+            <!-- put image here -->
+            <img src=" {{ url_for('static', filename='images/remote_install_banner.png') }} "/>
+        </div>
+        <div class="clear"></div>
+        <div class="grid_3" id="toolbar">
+
+            {% if current_user.is_authenticated() %}
+            <p>
+                Welcome {{ current_user.username }}.
+                <a href="{{ url_for('main.logout') }}"> Logout</a>
+            </p>
+
+            <h3> Jobs </h3>
+            <ul>
+                <li> <a href="{{ url_for('job.show_jobs') }}"> view all jobs </a> </li>
+                <li> <a href="{{ url_for('job.show_my_jobs') }}"> view my jobs </a> </li>
+                <li> <a href="{{ url_for('job.new_job') }}"> create new_job </a> </li>
+            </ul>
+
+            {% if current_user.admin %}
+                {% include 'admin_toolbar.html' %}
+            {% endif %}
+
+            <br>
+            <br>
+
+            <img src=" {{ url_for('static', filename='images/powered_by_fedora.png') }} "/>
+            {% else %}
+            <p>
+            <a href="{{ url_for('main.login') }}"> Login </a>
+            </p>
+
+            <h3> Jobs </h3>
+            <ul>
+                <li> <a href="{{ url_for('job.show_jobs') }}"> view all jobs </a> </li>
+            </ul>
+            {% endif %}
+        </div>
+
+        <div class="grid_9" id="main">
+            <header>
+
+            {% block header %}
+            header goes here
+            {% endblock %}
+            </header>
+
+            <div id="main" role="main">
+
+                {% for message in get_flashed_messages() %}
+                    <div class=flash>{{ message }}</div>
+                {% endfor %}
+
+                {% block body %}
+                body goes here
+                {% endblock %}
+            </div>
+
+            <!-- I'm pretty sure that I don't want a footer
+            <footer>
+
+            {% block footer %}
+            footer goes here
+            {% endblock %}
+
+            </footer>
+            -->
+        </div> <!--! end of #main -->
+    </div> <!-- end of container_12 -->
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>{{ name }}s</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_installers') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <th>name</td>
+        <th>fedora_version</td>
+        <th>Version</td>
+        <th>Location</td>
+        <th>Media Type</td>
+        <th>Date Created</td>
+    </tr>
+    {% for installer in paginate.items %}
+    <tr>
+        <td>{{ installer.id }}</td>
+        <td>{{ installer.name }}</td>
+        <td>{{ installer.fedora_version }}</td>
+        <td>{{ installer.version }}</td>
+        <td>{{ installer.location }}</td>
+        <td>{{ installer.media_type }}</td>
+        <td>{{ installer.creation_date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}

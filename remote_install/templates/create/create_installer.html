@@ -1,0 +1,37 @@
+{% extends "formbase.html" %}
+
+{% block form %}
+
+<tr>
+    <td>Installer Name</td>
+    <td> <input type="text" name="installer_name" value="Sample Name"/> </td>
+</tr>
+<tr>
+    <td>Fedora Version</td>
+    <td> <input type="text" name="fedora_version" value="99"/> </td>
+</tr>
+<tr>
+    <td>Version</td>
+    <td> <input type="text" name="version" value="0.1"/> </td>
+</tr>
+<tr>
+    <td>Location</td>
+    <td> <input type="text" name="location" value="http://localhost/repo_mirror/F99/"/> </td>
+</tr>
+
+{# for now, only remote trees are supported #}
+
+<input type="hidden" name="installer_type" value="tree"/>
+
+{#
+<tr>
+    <td>Media Type</td>
+    <td>
+        <select name="installer_type">
+            <option value="iso">ISO</option>
+            <option value="tree">Tree</option>
+        </select>
+    </td>
+</tr>
+#}
+{% endblock %}

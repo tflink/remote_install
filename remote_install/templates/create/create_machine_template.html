@@ -1,0 +1,18 @@
+{% extends "formbase.html" %}
+
+{% block form %}
+
+<tr>
+    <td>Template Name</td>
+    <td> <input type="text" name="template_name" value="Sample Name"/> </td>
+</tr>
+<tr>
+    <td>Memory (MB)</td>
+    <td><input type="text" name="memory" value="1024"/></td>
+</tr>
+<tr>
+    <td>Disk Size (GB)</td>
+    <td><input type="text" name="disk" value="10"/></td>
+</tr>
+
+{% endblock %}

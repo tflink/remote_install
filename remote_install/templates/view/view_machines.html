@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>{{ name }}s</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_machines') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <th>name</td>
+        <th>template</td>
+        <th>installer</td>
+        <th>status</td>
+    </tr>
+    {% for machine in paginate.items %}
+    <tr>
+        <td> <a href="{{ url_for('.machine_detail', machine_id=machine.id) }}">
+                {{ machine.id }} </a> </td>
+        <td>{{ machine.name }}</td>
+        <td>{{ machine.template.name }}</td>
+        <td>{{ machine.installer.name }}</td>
+        <td>{{ machine.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}

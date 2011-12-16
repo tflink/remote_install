@@ -1,0 +1,22 @@
+{% extends "formbase.html" %}
+
+{% block form %}
+
+<tr>
+    <td>Username</td>
+    <td> <input type="text" name="username" value="username"/> </td>
+</tr>
+<tr>
+    <td>Password</td>
+    <td> <input type="password" name="password" value="password"/> </td>
+</tr>
+<tr>
+    <td>Email</td>
+    <td> <input type="text" name="user_email" value="user@localhost"/> </td>
+</tr>
+<tr>
+    <td>Admin</td>
+    <td> <input type="checkbox" name="is_admin" value="True"/></td>
+</tr>
+
+{% endblock %}

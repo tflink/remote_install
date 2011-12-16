@@ -1,0 +1,22 @@
+{% extends "formbase.html" %}
+
+{% block form %}
+
+<tr>
+    <td>MAC Address</td>
+    <td> <input type="text" name="macaddress" value="01:23:45:67:89:AB"/> </td>
+</tr>
+<tr>
+    <td>URL</td>
+    <td><input type="text" name="url" value="http://localhost:8080/guacamole"/></td>
+</tr>
+<tr>
+    <td>Username</td>
+    <td><input type="text" name="username" value="user"/></td>
+</tr>
+<tr>
+    <td>Password</td>
+    <td><input type="text" name="password" value="password"/></td>
+</tr>
+
+{% endblock %}

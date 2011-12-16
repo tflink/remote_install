@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>{{ name }}s</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_users') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</th>
+        <th>username</th>
+        <th>email</th>
+        <th>admin</th>
+        <th>alter</th>
+    </tr>
+    {% for user in paginate.items %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+            {% if user.admin %}
+            Y
+            {% endif %}
+        </td>
+        {% if current_user.admin %}
+        <td>
+            <form method='post' action='./{{ user.id }}'>
+                {% if user.admin %}
+                <input type='hidden' name='request' value='REMOVE_ADMIN'/>
+                <input type='submit' value='remove admin'/>
+                {% else %}
+                <input type='hidden' name='request' value='MAKE_ADMIN'/>
+                <input type='submit' value='make admin'/>
+                {% endif %}
+            </form>
+        </td>
+        {% endif %}
+
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}

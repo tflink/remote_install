@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>{{ name }}s</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_installers') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <th>name</td>
+        <th>memory</td>
+        <th>disk</td>
+    </tr>
+    {% for template in paginate.items %}
+    <tr>
+        <td>{{ template.id }}</td>
+        <td>{{ template.name }}</td>
+        <td>{{ template.memory }}</td>
+        <td>{{ template.disk }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}

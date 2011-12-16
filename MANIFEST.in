@@ -1,0 +1,2 @@
+recursive-include remote_graphical/templates *
+recursive-include remote_graphical/static *

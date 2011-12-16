@@ -1,0 +1,22 @@
+External projects redistributed here:
+
+  - HTML5 Boilerplate (public domain)
+    * http://html5boilerplate.com/
+
+  - Grid 960 (GPL3 and MIT)
+    * http://960.gs/
+
+  - Spins-graphics-template (CC-BY-SA 3.0)
+    * http://fedoraproject.org/wiki/How_to_create_graphics_for_a_new_spin
+
+
+
+Also includes small pieces from:
+  - Cobbler (GPL2+)
+    * https://cobbler.github.com
+    * anamon, anamon-init and the anamon controllers
+
+  - flask-boilerplate (APL 2.0)
+    * https://github.com/swaroopch/flask-boilerplate
+    * not much code from this but I did borrow heavily to create the structure
+      of the application

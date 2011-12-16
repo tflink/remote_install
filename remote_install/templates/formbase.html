@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<h1> Add {{ form_type }} </h1>
+{% endblock %}
+
+{% block body %}
+<form method="post" action="new">
+    <!-- <form method="post" action="{{ action_type }}"> -->
+    <table>
+    {% block form %}
+    form goes here!
+    {% endblock %}
+        <tr>
+            <td>
+                <input type="submit" value="Create new {{ form_type }}"/>
+            </td>
+        </tr>
+    <table>
+</form>
+{% endblock %}

@@ -1,0 +1,71 @@
+============================================================
+remote_install
+============================================================
+
+Remote Install is a web application that supports graphical Fedora
+installation testing using Anaconda without requiring any local infrastructure.
+
+This project is meant ONLY as a demonstration and has some issues. The idea was
+to start with the minimum effort possible in order to see if the idea is worth
+using farther - USE AT YOUR OWN RISK.
+
+That being said, there isn't a whole lot of setup documenation right now. If you
+want to start hacking on this and would like to see documentation, please file
+a ticket in the github repo or ping me and I'll get started on it sooner.
+
+This project includes some code from other projects. The details of those
+contributions are listed in CONTRIB.
+
+
+============================================================
+What is assumed:
+============================================================
+ - You already have a guacamole server set up
+   * See http://guacamole.sourceforge.net/
+   * Sample config in conf/guacamole-user-mapping.example.xml
+
+ - You already have libvirt setup for same-IP-for-MAC
+   * Sample config in conf/libvirt-network.example.conf
+
+ - You already have an httpd server set up to serve the anaconda logs
+
+
+============================================================
+What is working:
+============================================================
+ - Metadata creation through web UI
+ - Basic internal user auth
+ - Spawning of VMs through Fabric
+ - remote logging of installation
+ - sqlite3 backend
+ - some tests
+ - configuration from config file
+
+
+============================================================
+What is NOT working:
+============================================================
+ - Running as a wsgi app
+   * The embedded fabric script won't run as a wsgi app, you need to run this
+     using another app server (the dev server in werkzeug works fine for this)
+ - Non hardcoded VNC passwords
+   * It should be possible to coordinate with guacamole better but for now, the
+     only option is to hardcode the VNC users, passwords and ports.
+ - User registration
+   * all users need to be added by hand
+ - metadata modification
+   * with very few exceptions, the ability to edit data from the web UI has not
+     been implemented. You would need to alter the data directly in the DB
+
+
+============================================================
+General setup steps:
+============================================================
+( There are some details missing here, don't just blindly type these commands)
+
+ - create a virtualenv with the deps from dependencies.txt
+ - setup passwordless ssh-key auth to your virthost
+ - alter remote_install/config.py as needed
+   - Probably won't run well with the supplied defaults
+ - run 'python qnd_setup.py' in the virtualenv
+ - 'python runserver.py' in the virtualenv

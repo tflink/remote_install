@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>Jobs</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_jobs') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <th>Name</td>
+        <th>User</td>
+        <th>Status</td>
+        <th>Machine</td>
+    </tr>
+    {% for job in paginate.items %}
+    <tr>
+        <td> <a href="{{ url_for('job.job_detail', job_id=job.id) }}"> {{ job.id }} </a> </td>
+        <td>{{ job.name }}</td>
+        <td>{{ job.user.username }}</td>
+        <td>{{ job.status }}</td>
+        <td> <a href="{{ url_for('component.machine_detail', machine_id=job.machine.id) }}">
+                {{ job.machine.name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock%}

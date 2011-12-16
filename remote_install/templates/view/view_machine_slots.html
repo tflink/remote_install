@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>{{ name }}s</h1>
+{% endblock %}
+
+{% block body %}
+
+{{ render_pagination(paginate, '.show_machine_slots') }}
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <th>MAC Address</td>
+        <th>URL</td>
+        <th>Username</td>
+        <th>Password</td>
+        <th>Active</td>
+    </tr>
+    {% for slot in paginate.items %}
+    <tr>
+        <td>{{ slot.id }}</td>
+        <td>{{ slot.macaddress }}</td>
+        <td>{{ slot.url }}</td>
+        <td>{{ slot.username }}</td>
+        <td>{{ slot.password }}</td>
+        <td>
+            {% if slot.active %}
+                ACTIVE
+            {% else %}
+                NOT_ACTIVE
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}

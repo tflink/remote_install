@@ -1,0 +1,35 @@
+<user-mapping>
+
+    <!-- Auth Information for virt slot 1 -->
+    <authorize username="virt1" password="PASSWORD">
+        <protocol>vnc</protocol>
+        <param name="hostname">192.168.122.151</param>
+        <param name="port">5901</param>
+        <param name="password">PASSWORD</param>
+    </authorize>
+
+    <authorize username="virt1-detail" password="PASSWORD">
+        <protocol>vnc</protocol>
+        <param name="hostname">127.0.0.1</param>
+        <param name="port">5901</param>
+        <param name="password">password</param>
+    </authorize>
+
+
+    <!-- Auth Information for virt slot 2 -->
+    <authorize username="virt2" password="PASSWORD">
+        <protocol>vnc</protocol>
+        <param name="hostname">192.168.122.152</param>
+        <param name="port">5901</param>
+        <param name="password">PASSWORD</param>
+    </authorize>
+
+    <authorize username="virt2-detail" password="PASSWORD">
+        <protocol>vnc</protocol>
+        <param name="hostname">127.0.0.1</param>
+        <param name="port">5902</param>
+        <param name="password">password</param>
+    </authorize>
+
+
+</user-mapping>

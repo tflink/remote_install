@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="960"
+   height="120"
+   id="svg3385"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="graphics_template.svg">
+  <defs
+     id="defs3387">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13448-8"
+       id="linearGradient11225"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.018,0,0,0.667773,-9622.15,6971.75)"
+       x1="9981"
+       y1="245"
+       x2="9981"
+       y2="169.5605" />
+    <linearGradient
+       id="linearGradient13448-8"
+       inkscape:collect="always">
+      <stop
+         id="stop13450-9"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop13452-1"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <filter
+       height="1.234109"
+       y="-0.11705453"
+       width="1.0126483"
+       x="-0.006324165"
+       id="filter9754-5"
+       inkscape:collect="always"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur9756-4"
+         stdDeviation="2.6825"
+         inkscape:collect="always" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8021">
+      <rect
+         style="fill:url(#linearGradient8025);fill-opacity:1;stroke:none"
+         id="rect8023"
+         width="960"
+         height="119"
+         x="30"
+         y="71.000153"
+         rx="0" />
+    </clipPath>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8015"
+       x="-0.053886175"
+       width="1.1077724"
+       y="-0.10845819"
+       height="1.2169164">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.814414"
+         id="feGaussianBlur8017" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7896">
+      <stop
+         style="stop-color:#6f84a5;stop-opacity:1"
+         offset="0"
+         id="stop7898" />
+      <stop
+         style="stop-color:#dbdee3;stop-opacity:1"
+         offset="1"
+         id="stop7900" />
+    </linearGradient>
+    <linearGradient
+       y2="-52.890526"
+       x2="336"
+       y1="-178.00012"
+       x1="335"
+       gradientTransform="translate(-30.562,1122.3663)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient13481"
+       xlink:href="#linearGradient7896"
+       inkscape:collect="always" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13628">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/duffy/Projects/Fedora/fedoraproject.org/Spins/Banners/banner_lxde.png"
+         style="fill:url(#linearGradient13632);fill-opacity:1;stroke:none"
+         id="rect13630"
+         width="960"
+         height="179.99023"
+         x="29.999996"
+         y="6947.6406"
+         rx="0" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7896"
+       id="linearGradient13632"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.5125229,0,7235.0204)"
+       x1="335"
+       y1="-178.00012"
+       x2="336"
+       y2="-52.890526" />
+    <filter
+       inkscape:collect="always"
+       id="filter14457"
+       x="-0.036302497"
+       width="1.072605"
+       y="-0.45134699"
+       height="1.902694">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.3176189"
+         id="feGaussianBlur14459" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7896-2">
+      <stop
+         style="stop-color:#6f84a5;stop-opacity:1"
+         offset="0"
+         id="stop7898-6" />
+      <stop
+         style="stop-color:#dbdee3;stop-opacity:1"
+         offset="1"
+         id="stop7900-0" />
+    </linearGradient>
+    <linearGradient
+       y2="-52.890526"
+       x2="336"
+       y1="-178.00012"
+       x1="335"
+       gradientTransform="matrix(0.241667,0,0,0.672269,-7.2520129,305.7313)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient14543"
+       xlink:href="#linearGradient7896-2"
+       inkscape:collect="always" />
+    <filter
+       inkscape:collect="always"
+       id="filter14648"
+       x="-0.039277485"
+       width="1.078555"
+       y="-0.23244861"
+       height="1.4648972">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.9965496"
+         id="feGaussianBlur14650" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7896-4">
+      <stop
+         style="stop-color:#6f84a5;stop-opacity:1"
+         offset="0"
+         id="stop7898-1" />
+      <stop
+         style="stop-color:#dbdee3;stop-opacity:1"
+         offset="1"
+         id="stop7900-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7896-4"
+       id="linearGradient15161"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.125,0,0,0.378151,-3.7504733,386.84847)"
+       x1="335"
+       y1="-178.00012"
+       x2="336"
+       y2="-52.890526" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7896-4"
+       id="linearGradient15189"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.125,0,0,0.378151,-3.750473,386.84847)"
+       x1="335"
+       y1="-178.00012"
+       x2="336"
+       y2="-52.890526" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7896-2"
+       id="linearGradient15197"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.241667,0,0,0.672269,-7.25201,305.7313)"
+       x1="335"
+       y1="-178.00012"
+       x2="336"
+       y2="-52.890526" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7896"
+       id="linearGradient15205"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-30.562,1122.3663)"
+       x1="335"
+       y1="-178.00012"
+       x2="336"
+       y2="-52.890526" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="473.82306"
+     inkscape:cy="-100.72435"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1426"
+     inkscape:window-height="892"
+     inkscape:window-x="2282"
+     inkscape:window-y="124"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       orientation="1,0"
+       position="948.49438,83.41573"
+       id="guide14885" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="906.78652,109.30337"
+       id="guide14887" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="257.4382,43.146067"
+       id="guide14889" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="22.292135,43.865169"
+       id="guide14891" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3390">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Mini Graphic"
+     style="display:inline">
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       x="4.7875504"
+       y="379.49655"
+       id="text15080"><tspan
+         sodipodi:role="line"
+         id="tspan15082"
+         x="4.7875504"
+         y="379.49655"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">Mini Graphic</tspan></text>
+    <text
+       id="text15084"
+       y="379.49655"
+       x="108.08485"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="379.49655"
+         x="108.08485"
+         id="tspan15086"
+         sodipodi:role="line">120 x 45 px</tspan></text>
+    <rect
+       y="319.59235"
+       x="-2.4248297"
+       height="45"
+       width="120"
+       id="rect8070"
+       style="fill:none;stroke:none"
+       inkscape:export-filename="/home/duffy/Repositories/fedora-web/spins.fedoraproject.org/static/images/spin/lxde-mini.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/duffy/Repositories/fedora-web/spins.fedoraproject.org/static/images/spin/lxde-mini.png"
+       style="fill:url(#linearGradient15161);fill-opacity:1;stroke:none;display:none"
+       id="spin-mini"
+       width="120"
+       height="45"
+       x="0"
+       y="315"
+       rx="0"
+       inkscape:label="#spin-mini">
+      <desc
+         id="desc15181">Mini graphic for a spin.</desc>
+      <title
+         id="title15179">Mini graphic</title>
+    </rect>
+    <rect
+       inkscape:label="#spin-mini"
+       rx="0"
+       y="315"
+       x="0"
+       height="45"
+       width="120"
+       id="rect15183"
+       style="fill:url(#linearGradient15189);fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/duffy/Repositories/fedora-web/spins.fedoraproject.org/static/images/spin/lxde-mini.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <desc
+         id="desc15185">Mini graphic for a spin.</desc>
+      <title
+         id="title15187">Mini graphic</title>
+    </rect>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Feature Graphic"
+     style="display:inline">
+    <rect
+       inkscape:label="#spin-feature"
+       rx="0"
+       y="178"
+       x="0"
+       height="80"
+       width="232"
+       id="rect15191"
+       style="fill:url(#linearGradient15197);fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/duffy/Repositories/fedora-web/spins.fedoraproject.org/static/images/spin/lxde-feature.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <desc
+         id="desc15193">Feature graphic for a spin.</desc>
+      <title
+         id="title15195">Feature graphic</title>
+    </rect>
+    <text
+       id="text14463-8"
+       y="278.77747"
+       x="4.7875504"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="278.77747"
+         x="4.7875504"
+         id="tspan14465-8"
+         sodipodi:role="line">Feature Graphic</tspan></text>
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="134.41551"
+       y="278.77747"
+       id="text14467-9"><tspan
+         sodipodi:role="line"
+         id="tspan14469-8"
+         x="134.41551"
+         y="278.77747"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">232 x 80 px</tspan></text>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/duffy/Repositories/fedora-web/spins.fedoraproject.org/static/images/spin/lxde-feature.png"
+       style="fill:url(#linearGradient14543);fill-opacity:1;stroke:none;display:none"
+       id="spin-feature"
+       width="232"
+       height="80"
+       x="0"
+       y="178"
+       rx="0"
+       inkscape:label="#spin-feature">
+      <desc
+         id="desc15177">Feature graphic for a spin.</desc>
+      <title
+         id="title15175">Feature graphic</title>
+    </rect>
+    <image
+       xlink:href="data:image/png;base64,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 "
+       width="84"
+       height="23"
+       id="image15442"
+       x="80"
+       y="192" />
+    <use
+       transform="matrix(0.73189974,0,0,0.73189974,267.47259,-535.00034)"
+       style="fill:#eeeeec;display:inline"
+       x="0"
+       y="0"
+       xlink:href="#text14415"
+       id="use14612"
+       width="960"
+       height="120" />
+    <use
+       style="fill:#eeeeec;display:inline"
+       x="0"
+       y="0"
+       xlink:href="#text14415"
+       id="use14914"
+       transform="matrix(0.67455494,0,0,0.67455494,251.53415,280.31294)"
+       width="960"
+       height="120" />
+  </g>
+  <g
+     inkscape:label="Tagline Graphic"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-932.36218)"
+     style="display:inline">
+    <rect
+       inkscape:label="#spin-tagline"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/duffy/Projects/Fedora/fedoraproject.org/Spins/Banners/banner_lxde.png"
+       style="fill:url(#linearGradient15205);fill-opacity:1;stroke:none"
+       id="rect15199"
+       width="960"
+       height="119"
+       x="-0.56200409"
+       y="932.36603"
+       rx="0">
+      <desc
+         id="desc15201">Tagline graphic for a spin.</desc>
+      <title
+         id="title15203">Tagline graphic</title>
+    </rect>
+    <rect
+       rx="0"
+       y="932.36603"
+       x="-0.56200409"
+       height="119"
+       width="960"
+       id="spin-tagline"
+       style="fill:url(#linearGradient13481);fill-opacity:1;stroke:none;display:none"
+       inkscape:export-filename="/home/duffy/Projects/Fedora/fedoraproject.org/Spins/Banners/banner_lxde.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:label="#spin-tagline">
+      <desc
+         id="desc15173">Tagline graphic for a spin.</desc>
+      <title
+         id="title15171">Tagline graphic</title>
+    </rect>
+    <g
+       id="g15179"
+       style="opacity:0.6372549;stroke:#ffffff;stroke-width:9;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter8015)"
+       clip-path="url(#clipPath8021)"
+       transform="translate(-30.562,861.36628)">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc"
+         id="path15181"
+         d="m 266,180.00012 c 0,0 393,-26 455,-138.999998 37.26314,-67.915081 -1,-63 -1,-63"
+         style="fill:none;stroke:#ffffff;stroke-width:9;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         id="path15183"
+         d="M 740,8.0001221 C 755.65729,99.806964 679.37669,163.55813 600,186.00012"
+         style="fill:none;stroke:#ffffff;stroke-width:9;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc"
+         id="path15185"
+         d="m 600,23.000122 c 0,0 -57.7332,42.394238 -136,89.999998 -89.8825,54.67101 -238,71 -238,71"
+         style="fill:none;stroke:#ffffff;stroke-width:9;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       xlink:href="data:image/png;base64,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 "
+       width="104"
+       height="30"
+       id="image15407"
+       x="23"
+       y="944.36218" />
+    <g
+       id="g13634">
+      <rect
+         clip-path="url(#clipPath13628)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/duffy/Desktop/rect4747.png"
+         style="fill:url(#linearGradient11225);fill-opacity:1;stroke:none;filter:url(#filter9754-5)"
+         id="rect15426"
+         width="1018"
+         height="55.000008"
+         x="1"
+         y="7085"
+         transform="matrix(1,0,0,0.661147,-30.562,-3661.0457)" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#text14415"
+       id="use14423"
+       transform="translate(280,140)"
+       width="960"
+       height="120"
+       style="fill:#e6e6e4;fill-opacity:1" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#text14433"
+       id="use14441"
+       transform="translate(421.77528,102.7191)"
+       width="960"
+       height="120"
+       style="font-size:19.17000008px;fill:#ffffff;fill-opacity:1" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use14441"
+       id="use14443"
+       width="960"
+       height="120"
+       style="filter:url(#filter14457)" />
+    <text
+       id="text14463"
+       y="1062.6329"
+       x="4.7441425"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="1062.6329"
+         x="4.7441425"
+         id="tspan14465"
+         sodipodi:role="line">Tagline Graphic</tspan></text>
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="134.37209"
+       y="1062.6329"
+       id="text14467"><tspan
+         sodipodi:role="line"
+         id="tspan14469"
+         x="134.37209"
+         y="1062.6329"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">960x120 px</tspan></text>
+    <use
+       style="fill:#eeeeec;display:inline"
+       x="0"
+       y="0"
+       xlink:href="#text14415"
+       id="use14634"
+       transform="translate(278,1070.3622)"
+       width="960"
+       height="120" />
+    <use
+       style="fill:#ffffff;fill-opacity:1;display:inline"
+       x="0"
+       y="0"
+       xlink:href="#text14433"
+       id="use14638"
+       width="1"
+       height="1"
+       transform="translate(422,1032.3622)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use14638"
+       id="use14642"
+       style="fill:#ffffff;fill-opacity:1;filter:url(#filter14648)"
+       width="960"
+       height="120" />
+    <image
+       xlink:href="data:image/png;base64,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 rkJggg== "
+       width="104"
+       height="30"
+       id="image15425"
+       x="403"
+       y="1106.3622" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Logo Graphic">
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       x="409.87485"
+       y="278.77747"
+       id="text15368"><tspan
+         sodipodi:role="line"
+         id="tspan15370"
+         x="409.87485"
+         y="278.77747"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">Logo Graphic</tspan></text>
+    <text
+       id="text15372"
+       y="278.77747"
+       x="525.32483"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="278.77747"
+         x="525.32483"
+         id="tspan15374"
+         sodipodi:role="line">For use on a plain white background.</tspan></text>
+    <rect
+       style="opacity:0.27555554;color:#000000;fill:#babdb6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:none;overflow:visible;enable-background:accumulate"
+       id="spin-logo"
+       width="272.35406"
+       height="87.887306"
+       x="394.04425"
+       y="166.35815">
+      <desc
+         id="desc15388">Logo for the spin.</desc>
+      <title
+         id="title15386">Spin Logo</title>
+    </rect>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Configuration (Start here)"
+     style="display:inline">
+    <text
+       id="text14415"
+       y="-61.047691"
+       x="-259.44934"
+       style="font-size:35.82960129px;font-style:normal;font-weight:normal;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="fill-opacity:1;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+         y="-61.047691"
+         x="-259.44934"
+         id="tspan14417"
+         sodipodi:role="line">Remote Installation</tspan></text>
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       x="-258.56262"
+       y="-95.006004"
+       id="text14419"><tspan
+         sodipodi:role="line"
+         id="tspan14421"
+         x="-258.56262"
+         y="-95.006004"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">Type the spin name below:</tspan></text>
+    <text
+       id="text14429"
+       y="825.64703"
+       x="308.55963"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="matrix(0.98744142,0,0,1.0127183,0,-932.36218)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="825.64703"
+         x="308.55963"
+         id="tspan14431"
+         sodipodi:role="line">Type the tagline below:</tspan></text>
+    <text
+       id="text14433"
+       y="849.22345"
+       x="532.78363"
+       style="font-size:19.17000008px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="matrix(0.98744142,0,0,1.0127183,0,-932.36218)"><tspan
+         id="tspan14435"
+         style="text-align:end;text-anchor:end;fill-opacity:1;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+         y="849.22345"
+         x="532.78363"
+         sodipodi:role="line">Testing Fedora.</tspan><tspan
+         style="text-align:end;text-anchor:end;fill-opacity:1;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+         y="873.18597"
+         x="532.78363"
+         sodipodi:role="line"
+         id="tspan14461">From the comfort of your own home.</tspan></text>
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       x="4.7875504"
+       y="-173.47069"
+       id="text15049"><tspan
+         sodipodi:role="line"
+         id="tspan15051"
+         x="4.7875504"
+         y="-173.47069"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium">Configuration Layer</tspan></text>
+    <text
+       id="text15053"
+       y="-173.47069"
+       x="195.1786"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="-173.47069"
+         x="195.1786"
+         sodipodi:role="line"
+         id="tspan15067">Please fill out the fields above below. You may then open up the Inkscape layers palette </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="-155.38956"
+         x="195.1786"
+         sodipodi:role="line"
+         id="tspan15263">using the <tspan
+   style="font-weight:bold"
+   id="tspan15069">Layers &gt; Layers</tspan> menu item to interact with each graphic.</tspan></text>
+    <text
+       id="text15207"
+       y="458.49191"
+       x="4.7875504"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       transform="scale(0.98744142,1.0127183)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         y="458.49191"
+         x="4.7875504"
+         id="tspan15209"
+         sodipodi:role="line">Once you're finished...</tspan></text>
+    <text
+       transform="scale(0.98744142,1.0127183)"
+       xml:space="preserve"
+       style="font-size:14.46490192px;font-style:normal;font-weight:normal;fill:#2e3436;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans"
+       x="195.1786"
+       y="458.49191"
+       id="text15211"><tspan
+         sodipodi:role="line"
+         x="195.1786"
+         y="458.49191"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         id="tspan15229">You'll need to run a script to export the graphics. Don't have a copy?</tspan><tspan
+         sodipodi:role="line"
+         x="195.1786"
+         y="476.57303"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         id="tspan15293">Grab it at:</tspan><tspan
+         sodipodi:role="line"
+         x="195.1786"
+         y="494.65417"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         id="tspan15295">https://fedoraproject.org/wiki/How_to_create_graphics_for_a_new_spin</tspan><tspan
+         sodipodi:role="line"
+         x="195.1786"
+         y="512.73529"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         id="tspan15231" /><tspan
+         sodipodi:role="line"
+         x="195.1786"
+         y="530.81641"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#2e3436;fill-opacity:1;font-family:Cantarell;-inkscape-font-specification:Cantarell Medium"
+         id="tspan15233" /></text>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#text14415"
+       id="use15330"
+       transform="translate(658,300)"
+       width="960"
+       height="120"
+       style="fill:#babdb6" />
+  </g>
+</svg>

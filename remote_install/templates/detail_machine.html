@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1>Machine {{ machine.name }}</h1>
+{% endblock %}
+
+{% block body %}
+
+
+<table class="listtable">
+    <tr>
+        <th>ID</td>
+        <td>{{ machine.id }}</td>
+    </tr>
+    <tr>
+        <th>template</td>
+        <td>{{ machine.template.name }}</td>
+    </tr>
+    <tr>
+        <th>name</td>
+        <td>{{ machine.name }}</td>
+    </tr>
+    <tr>
+        <th>installer</td>
+        <td>{{ machine.installer.name }}</td>
+    </tr>
+    <tr>
+        <th>status</td>
+        <td>{{ machine.status }}</td>
+    </tr>
+    <tr>
+        <th>slot</td>
+        <td>{{ machine.slot.id }} </td>
+</table>
+
+
+{% if machine.status != 'DELETED' %}
+<br>
+
+<table>
+    <tr>
+    {% if machine.status == 'RUNNING' %}
+        <td>
+            <form method='post' action='./{{ machine.id }}'>
+                <input type='hidden' name='request' value='STOP'/>
+                <input type='submit' value='Stop Machine'/>
+            </form>
+        </td>
+    {% endif %}
+    {% if machine.status == 'STOPPED' %}
+        <td>
+            <form method='post' action='./{{ machine.id }}'>
+                <input type='hidden' name='request' value='DELETE'/>
+                <input type='submit' value='Delete Machine'/>
+            </form>
+        </td>
+    {% endif %}
+
+    </tr>
+
+</table>
+{% endif %}
+
+{% endblock%}

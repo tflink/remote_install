@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+<h1> Create New Job </h1>
+{% endblock %}
+
+{% block body %}
+<form method="post" action="./new">
+    <table>
+        <tr>
+            <td>Machine Template</td>
+            <td>
+                <select name="template">
+                    {% for template in templates %}
+                    <option value="{{ template.id }}">{{ template.name }} ( {{ template.memory }} Memory, {{ template.disk }} Disk)</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Installer</td>
+            <td>
+                <select name="installer">
+                    {% for installer in installers %}
+                    <option value="{{ installer.id }}">{{ installer.name }} ( Fedora {{ installer.fedora_version }}, {{ installer.media_type }}, {{ installer.location }}))</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+    <table>
+
+    <h4>
+        Job Creation is VERY slow. Please be patient and only click the create 
+        button once. You will be redirected to a new page once the VM has been
+        created.
+    </h4>
+
+    <input type="submit" value="Create new job"/>
+
+</form>
+{% endblock %}
