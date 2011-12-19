@@ -93,10 +93,6 @@ def new_job():
         if app.debug:
             app.logger.debug('Skeleton job %d created ' % job.id)
 
-        flash('The job has been created and is currently initializing. Once ' \
-              'initialization is complete, this page will show login information. ' \
-              'Please wait about 30 seconds and refresh the page manually.'
-              )
 
         machine_name = 'test-%d' % job.id
         machine = Machine(machine_name, template, installer, 'INIT', slot)
@@ -141,6 +137,10 @@ def get_machine_control():
 def job_detail(job_id):
 
     job = Job.query.get_or_404(job_id)
+    if job.status == 'INITIALIZING':
+        flash('The job has been created and is currently initializing. Once ' \
+                'initialization is complete, this page will show login information. ' \
+                'Please wait about 30 seconds and refresh the page manually.')
 
     if request.method == 'GET':
         if app.debug:
