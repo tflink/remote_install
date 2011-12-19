@@ -57,7 +57,6 @@
 
     <div id="container" class="container_12">
         <div id="banner" class="grid_12">
-            <!-- put image here -->
             <img src=" {{ url_for('static', filename='images/remote_install_banner.png') }} "/>
         </div>
         <div class="clear"></div>
@@ -69,11 +68,14 @@
                 <a href="{{ url_for('main.logout') }}"> Logout</a>
             </p>
 
-            <h3> Jobs </h3>
+            <form method='get' action='{{ url_for('job.new_job') }}'>
+                <input type='submit' value='New Job'/>
+            </form>
+
+            <h3> View Jobs </h3>
             <ul>
-                <li> <a href="{{ url_for('job.show_jobs') }}"> view all jobs </a> </li>
-                <li> <a href="{{ url_for('job.show_my_jobs') }}"> view my jobs </a> </li>
-                <li> <a href="{{ url_for('job.new_job') }}"> create new_job </a> </li>
+                <li> <a href="{{ url_for('job.show_my_jobs') }}"> my jobs </a> </li>
+                <li> <a href="{{ url_for('job.show_jobs') }}"> all jobs </a> </li>
             </ul>
 
             {% if current_user.admin %}
@@ -89,9 +91,9 @@
             <a href="{{ url_for('main.login') }}"> Login </a>
             </p>
 
-            <h3> Jobs </h3>
+            <h3> View Jobs </h3>
             <ul>
-                <li> <a href="{{ url_for('job.show_jobs') }}"> view all jobs </a> </li>
+                <li> <a href="{{ url_for('job.show_jobs') }}"> all jobs </a> </li>
             </ul>
             {% endif %}
         </div>

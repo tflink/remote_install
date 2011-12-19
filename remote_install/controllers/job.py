@@ -102,6 +102,7 @@ def new_job():
         machine = Machine(machine_name, template, installer, 'INIT', slot)
 
         job.machine = machine
+        job.name = "job-%d" % job.id
         db.session.add(machine)
         db.session.add(job)
         db.session.commit()
@@ -145,7 +146,6 @@ def job_detail(job_id):
         if app.debug:
             app.logger.debug('rendering detail for job %d' % job_id)
 
-
         log_files = []
         try:
             log_files = os.listdir('%s/test-%d' % (app.config['LOG_LOCATION'], job.id))
@@ -162,11 +162,11 @@ def job_detail(job_id):
                                 logs = log_files, slot=slot)
 
     if request.method == 'POST':
-        if not current_user.admin or current_user.get_id() != job.user.id:
-            app.logger.warn('User %s tried to modify job %d (owner: %s)' %
-                    (current_user.username, job.id, job.user.username))
-            flash('You need admin priviliges to make changes')
-            return redirect(url_for('.show_users'))
+        if not (current_user.admin or current_user.get_id() == job.user.id):
+            app.logger.warn('User %s (id: %d) tried to modify job %d (owner: %s, id: %d)' %
+                    (current_user.username, current_user.get_id(), job.id, job.user.username, job.user.id))
+            flash('You need admin priviliges to make changes to this job.')
+            return redirect(url_for('job.job_detail', job_id=job_id))
 
         if app.debug:
             app.logger.debug('job %d received POST request %s' % (job_id, str(request.form)))

@@ -2,11 +2,24 @@
 
 
 {% block header %}
-<h1> Job {{ job.id }} - {{ job.name }} </h1>
+<h1> Job {{ job.id }} </h1>
 {% endblock %}
 
 {% block body %}
 
+{% if job.status in ['INSTALLING', 'RUNNING'] and (current_user.get_id() == job.user.id or current_user.admin) %}
+<h3> Logging in to the Virtual Machine </h3>
+<p>
+The virtual machine is now running. You can log in to it by clicking on the
+'Remote Access' link below and logging in using either username and the
+password listed below.
+</p>
+
+<p>
+When testing is complete, please kill the VM by clicking on the
+'Complete Job and Kill VM\' button below
+</p>
+{% endif %}
 
 <table class="listtable">
     <tr>
@@ -78,12 +91,14 @@
 <br>
 <table>
     <tr>
+        {% if current_user.get_id() == job.user.id or current_user.admin %}
         <td>
             <form method='post' action='./{{ job.id }}'>
                 <input type='hidden' name='request' value='COMPLETE'/>
-                <input type='submit' value='Complete job'/>
+                <input type='submit' value='Complete job and kill VM'/>
             </form>
         </td>
+        {% endif %}
         {% if current_user.admin and job.status == 'INITIALIZING' %}
         <td>
             <form method='get' action='./{{ job.id }}/init_done'>

@@ -12,15 +12,46 @@
     </p>
 
     <p>
-    The basic idea is to create a job and login to the associated web interface
-    using the link, username and password that show up.
+    This allows you to try a custom installation of Fedora in a remote virtual 
+    machine without needing to download ISOs or use your own hardware. Play with
+    the interface, try as many different installations as you would like and if
+    you do hit issues, please report them
+    <a href="http://supermegawaffle.com/remote_install/issues.html"> at the project
+        site</a>.
     </p>
 
     <h2> WARNING</h2>
     <p>
-    This application is <b>ONLY</b> a demo, it might (and probably will break.
-    If it does, please let us know.
+    This application is <b>ONLY</b> a demo, it might (and probably will) break.
+    If you do hit a bug, please file an issue at
+    <a href="http://supermegawaffle.com/remote_install/issues.html"> the project
+        site</a>.
     </p>
+
+    <h2>Basic Usage Instructions</h2>
+    <p>
+    <ul>
+        <li>
+            To get started, create a new job using the button in the upper left
+            hand side of the page. VM creation is currently very slow, please wait until
+            the page has reloaded after job creation before clicking anything else.
+        </li>
+        <li>
+            Once the page has reloaded, initialization of the job will take 30 
+            seconds to one minute. The job detail page will change (manual refresh required)
+            when initialization is complete and login instructions will be displayed.
+        </li>
+        <li>
+            Login to the virtual machine by clicking on the 'remote access' link
+            on the page and logging in to the virtual machine's VNC console.
+        </li>
+        <li>
+            Once installation is complete, you will need to reboot the VM from
+            this web UI before logging in to the installed machine.
+        </li>
+    </ul>
+    </p>
+
 
 
 {% endblock %}
