@@ -12,6 +12,9 @@ url --url={{ tree }}
 # make sure that the VNC ports are open post install
 firewall --port=5901:tcp,6001:tcp
 
+# add a test user
+user --name=test --password={{ password }}
+
 %pre
 #enable installation monitoring
 wget -O /tmp/anamon "http://{{ server }}:{{ port }}/aux/anamon"
@@ -27,10 +30,9 @@ echo "installing tigervnc-server"
 yum -y install tigervnc-server
 
 # add a user 'test' and set vnc password
-echo "adding test user and configuring vnc"
-useradd --password '$1$iaLMqnvU$Gp27Evb2cX2jlI6tdadoH1' test
+echo "configuring vnc"
 su -l test -c 'mkdir ~/.vnc'
-su -l test -c 'echo "PASSWORD" | vncpasswd -f > ~/.vnc/passwd'
+su -l test -c 'echo "{{ password }}" | vncpasswd -f > ~/.vnc/passwd'
 su -l test -c 'chmod 600 ~/.vnc/passwd'
 
 # set vncserver to run at boot
